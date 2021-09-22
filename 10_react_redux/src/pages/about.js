@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import store from '../store';
-import { subAction } from '../store/actionCreators';
+import { decAction, subAction } from '../store/actionCreators';
 
 export default class About extends PureComponent {
   constructor(props) {
@@ -37,7 +37,7 @@ export default class About extends PureComponent {
   }
 
   decrement() {
-    store.dispatch(subAction(1));
+    store.dispatch(decAction());
   }
 
   subNumber(num) {

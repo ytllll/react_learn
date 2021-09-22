@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import store from '../store';
-import { addAction } from '../store/actionCreators';
+import { addAction, incAction } from '../store/actionCreators';
 
 export default class Home extends PureComponent {
   constructor(props) {
@@ -37,7 +37,7 @@ export default class Home extends PureComponent {
   }
 
   increament() {
-    store.dispatch(addAction(1))
+    store.dispatch(incAction())
   }
 
   addNumber(num) {
