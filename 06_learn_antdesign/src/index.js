@@ -4,6 +4,5 @@ import App from './comment/App';
 
 import 'antd/dist/antd.css';
 
-
 ReactDOM.render(<App />,document.getElementById('root'));
 
